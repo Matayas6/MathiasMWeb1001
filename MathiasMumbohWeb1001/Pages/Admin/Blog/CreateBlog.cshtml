@@ -1,0 +1,39 @@
+﻿@page
+@model MathiasMumbohWeb1001.Page.Admin.Blog.CreateBlogModel
+@{
+    ViewData["Title"] = "Create Blog";
+}
+
+<form method="post">
+ 
+
+    <div>
+            <label asp-for="BlogClass.BlogClass"></label>
+            <input asp-for="BlogClass.BlogClass" />
+            <span asp-validation-for="BlogClass.BlogClass"></span>
+        </div>
+        <div>
+            <label asp-for="BlogClass.BlogClass"></label>
+            <input asp-for="BlogClass.BlogClass" />
+            <span asp-validation-for="BlogClass.BlogClass"></span>
+        </div>
+        <div>
+            <label asp-for="BlogClass.BlogClass"></label>
+            <input asp-for="BlogClass.BlogClass" />
+            <span asp-validation-for="BlogClass.BlogClass"></span>
+        </div>
+        <div>
+            <label asp-for="BlogClass.BlogClass"></label>
+            <select asp-for="BlogClass.BlogClass" asp-items="Model.AuthorList"></select>
+            <span asp-validation-for="BlogClass.BlogClass"></span>
+        </div>
+</form>
+
+<section>
+<h1>This is the Create Blog Page</h1>
+<ul>
+    <li>Create a properties for the author</li>
+    <li>Databind the Author property to populate on a post</li>
+    <li>Please I'm not done with this page yet, I will come back and fix it</li>
+</ul>
+</section>

@@ -1,0 +1,83 @@
+﻿@page
+@model MathiasMumbohWeb1001.Pages.AdminFolder.Author.CreateAuthorModel
+@{
+    ViewData["Title"] = "Create Author";
+}
+
+<form method="post">
+
+    <div>
+        <label asp-for="AuthorClass.First_Name "></label>
+        <input asp-for="AuthorClass.First_Name "/>
+        <span asp-validation-for="AuthorClass.First_Name "></span>
+    </div>
+    <div>
+        <label asp-for="AuthorClass.Last_Name"></label>
+        <input asp-for="AuthorClass.Last_Name" />
+        <span asp-validation-for="AuthorClass.Last_Name"></span>
+    </div>
+    <div>
+        <label asp-for="AuthorClass.Birthday"></label>
+        <input asp-for="AuthorClass.Birthday" />
+        <span asp-validation-for="AuthorClass.Birthday"></span>
+    </div>
+    <div>
+        <label asp-for="AuthorClass.Email"></label>
+        <input asp-for="AuthorClass.Email" />
+        <span asp-validation-for="AuthorClass.Email"></span>
+    </div>
+    <div>
+        <label asp-for="AuthorClass.Website"></label>
+        <input asp-for="AuthorClass.Website" />
+        <span asp-validation-for="AuthorClass.Website"></span>
+    </div>
+    <div>
+        <label asp-for="AuthorClass.PhoneNumber"></label>
+        <input asp-for="AuthorClass.PhoneNumber" />
+        <span asp-validation-for="AuthorClass.PhoneNumber"></span>
+    </div>
+    <div>
+        <label asp-for="AuthorClass.Country"></label>
+        <input asp-for="AuthorClass.Country" />
+        <span asp-validation-for="AuthorClass.Country"></span>
+    </div>
+    <div>
+        <label asp-for="AuthorClass.Province"></label>
+        <input asp-for="AuthorClass.Province" />
+        <span asp-validation-for="AuthorClass.Province"></span>
+    </div>
+    <div>
+        <label asp-for="AuthorClass.ZipCode"></label>
+        <input asp-for="AuthorClass.ZipCode" />
+        <span asp-validation-for="AuthorClass.ZipCode"></span>
+    </div>
+    <div>
+        <label asp-for="AuthorClass.Password"></label>
+        <input asp-for="AuthorClass.Password" />
+        <span asp-validation-for="AuthorClass.Password"></span>
+    </div>
+
+
+
+    <input type="submit" value="Search" />
+</form>
+<div asp-validation-summary="All"></div>
+
+
+<section>
+    <script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</section>
+
+
+
+
+<section>
+    <h1>This is the Create Author Page</h1>
+    <ul>
+        <li>Create a properties for the author</li>
+        <li>Databind the Author property to populate on a post</li>
+        <li>Please I'm not done with this page yet, I will come back and fix it</li>
+    </ul>
+</section>
