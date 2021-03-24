@@ -1,4 +1,5 @@
 ﻿@page
+@using MathiasMumbohWeb1001.Pages.Models;
 @model MathiasMumbohWeb1001.Page.Admin.Blog.CreateBlogModel
 @{
     ViewData["Title"] = "Create Blog";
@@ -8,24 +9,24 @@
  
 
     <div>
-            <label asp-for="BlogClass.BlogClass"></label>
-            <input asp-for="BlogClass.BlogClass" />
-            <span asp-validation-for="BlogClass.BlogClass"></span>
+            <label asp-for="BlogClass.Title"></label>
+            <input asp-for="BlogClass.Title" />
+            <span asp-validation-for="BlogClass.Title"></span>
         </div>
         <div>
-            <label asp-for="BlogClass.BlogClass"></label>
-            <input asp-for="BlogClass.BlogClass" />
-            <span asp-validation-for="BlogClass.BlogClass"></span>
+            <label asp-for="BlogClass.Content"></label>
+            <input asp-for="BlogClass.Content"/>
+            <span asp-validation-for="BlogClass.Content"></span>
         </div>
         <div>
-            <label asp-for="BlogClass.BlogClass"></label>
-            <input asp-for="BlogClass.BlogClass" />
-            <span asp-validation-for="BlogClass.BlogClass"></span>
+            <label asp-for="BlogClass.PublishDate"></label>
+            <input asp-for="BlogClass.PublishDate" />
+            <span asp-validation-for="BlogClass.PublishDate"></span>
         </div>
         <div>
-            <label asp-for="BlogClass.BlogClass"></label>
-            <select asp-for="BlogClass.BlogClass" asp-items="Model.AuthorList"></select>
-            <span asp-validation-for="BlogClass.BlogClass"></span>
+            <label asp-for="BlogClass.Author"></label>
+            <select asp-for="BlogClass.Author" asp-items="Model.AuthorList"></select>
+            <span asp-validation-for="BlogClass.Author"></span>
         </div>
 </form>
 

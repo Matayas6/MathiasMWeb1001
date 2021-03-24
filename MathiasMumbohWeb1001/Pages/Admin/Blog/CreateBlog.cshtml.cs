@@ -11,7 +11,7 @@ namespace MathiasMumbohWeb1001.Page.Admin.Blog
     public class CreateBlogModel : PageModel
     {
         [FromForm]
-        public CreateBlogModel BlogClass { get; set; } = new CreateBlogModel();
+        public BlogClass BlogClass { get; set; } = new BlogClass();
 
         private List<AuthorClass> Authors { get; set; } = new List<AuthorClass>();
 
