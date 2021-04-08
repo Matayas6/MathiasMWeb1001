@@ -16,6 +16,7 @@ namespace MathiasMumbohWeb1001.Pages.Models
         public int Birthday { get; set; }
 
         [EmailAddress]
+        [Key]
         [Required(ErrorMessage = "Enter a valid Email address.")]
         public string Email { get; set; }
 

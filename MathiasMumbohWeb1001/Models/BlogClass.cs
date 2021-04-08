@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 namespace MathiasMumbohWeb1001.Pages.Models
 {
     public class BlogClass
-    {
+    {   [Key]
         public string Title { get; set; }
 
         public string Content { get; set; }
