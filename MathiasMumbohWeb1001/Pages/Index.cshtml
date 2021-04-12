@@ -1,11 +1,48 @@
 ﻿@page
-@model IndexModel
+@model MathiasMumbohWeb1001.Pages.IndexModel
+
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Index";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>This Site is in developing Mode</p>
-</div>
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BlogClass[0].Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BlogClass[0].Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BlogClass[0].PublishDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.BlogClass) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishDate)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Title">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Title">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Title">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

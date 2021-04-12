@@ -26,8 +26,8 @@ namespace MathiasMumbohWeb1001
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddDbContext<DataContext>(options =>
-            {
+
+            services.AddDbContext<DataContext>(options =>{
                 options.UseSqlServer(Configuration.GetConnectionString("DataConnection"));
             });
         }
